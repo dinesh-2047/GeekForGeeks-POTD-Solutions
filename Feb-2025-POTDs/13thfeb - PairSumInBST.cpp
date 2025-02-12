@@ -1,6 +1,7 @@
 // Pair sum in bst 
 
-// Approach using inorder and binary search 
+// Approach using inorder and binary search  
+//first apply binary inorder traversal and then binary search to check if the sum is equal to target 
 
 class Solution {
     public:
