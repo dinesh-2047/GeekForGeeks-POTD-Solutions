@@ -3,7 +3,7 @@
 
 class Solution {
   public:
-  bool isPossible(int mid , int k, int cumSum, vector<int>& arr){
+  bool isPossible(int mid , int k, vector<int>& arr){
      int count = 0 ; 
      int n= arr.size();
      for(int i = 0 ; i <n; i++){
@@ -21,11 +21,7 @@ class Solution {
     int kokoEat(vector<int>& arr, int k) {
        
         int n = arr.size();
-        
-        int cumSum = 0 ; 
-        for(int i = 0 ; i <n; i++){
-            cumSum += arr[i];
-        }
+       
         
         int low = 1 ; 
         int high = *max_element(arr.begin(), arr.end());
@@ -34,7 +30,7 @@ class Solution {
         while(low <= high){
             int mid = low + (high - low )/2;
             
-            if(isPossible(mid, k, cumSum, arr)){
+            if(isPossible(mid, k,  arr)){
                 result = min(result , mid);
                 high = mid - 1;
             }
