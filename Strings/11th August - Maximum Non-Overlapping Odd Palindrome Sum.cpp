@@ -1,5 +1,16 @@
 // Maximum Non-Overlapping Odd Palindrome Sum
 
+
+
+
+//Not done by me 
+
+
+
+
+
+
+
 class manacher {
 
 public:
